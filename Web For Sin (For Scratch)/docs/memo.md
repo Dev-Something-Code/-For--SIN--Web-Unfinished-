@@ -9,7 +9,7 @@
 ## その他
 ```js
 let time = "2026/01/22 23:23"
-console.log("last update time : ${time}")
+console.log(`last update time : ${time}`)
 
 -- terminal
 last update time : 2026/01/22 23:23
