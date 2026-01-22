@@ -29,7 +29,7 @@ const txt = {
         "cu-txt": `If you have any questions or would like to participate in this project, please contact us.`
     },
 
-    ja: {
+    jp: {
         "title-txt": `Scratch Next-Generation Engine -SIN-<br>開発リーダー <a href="https://scratch.mit.edu/users/luwarz1024" target="_blank" rel="noopener noreferrer">@luwarz1024</a><br>支援者 <a href="https://scratch.mit.edu/studios/51192952/" target="_blank" rel="noopener noreferrer">Scratcher Federation</a>`,
 
         "about-title": `今後の予定について`,
@@ -61,12 +61,32 @@ const txt = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll('[data-key]');
-    const html = document.documentElement;
-    let lang = html.classList.contains('jp') ? 'jp' : 'en';
+    function change_txt(lang) {
+        const elements = document.querySelectorAll('[data-key]');
+        
+        elements.forEach((el) => {
+            const key = el.dataset.key;
+            el.innerHTML = txt[lang][key];
+        });
+    };
 
-    elements.forEach((el) => {
-        const key = el.dataset.key;
-        el.innerHTML = txt[lang][key];
+    const langBtn = document.getElementById('langBtn');
+    const langMenu = document.getElementById('lang-menu');
+    const lang_html = document.documentElement;
+
+    change_txt(lang_html.classList.contains('jp') ? 'jp' : 'en');
+
+    langBtn.addEventListener("click", () => {
+        langMenu.classList.toggle("open");
     });
-});
+
+    langMenu.addEventListener("click", (e) => {
+        const item = e.target
+
+        if (!item.dataset.lang) return;
+        change_txt(item.dataset.lang);
+
+        langMenu.classList.toggle("open");
+
+    })
+});;
