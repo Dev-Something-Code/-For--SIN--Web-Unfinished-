@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/home.css">
+        <link rel="stylesheet" href="./styles/common_style.css">
+        <link rel="stylesheet" href="./styles/lang.css">
+
+        <!--Fonts Jp:Kiwi Maru En:Indie Flower-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kiwi+Maru&display=swap" rel="stylesheet">
+
+        <!--SNGE = Scratch Next-Generation Engine-->
+        <title>SNGE -SIN-</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <p class="header-title">Scratch Next-Generation Engine -SIN-</p>
+
+            <button class="hamburger" id="hamburger">☰</button>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="langBtn">
+                <button id="langBtn">Languages</button>
+
+                <div class="langBtn-menu" id="lang-menu">
+                    <button data-lang="ja">日本語</button>
+                    <button data-lang="en">English</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-title">
+            <h1 class="hidden">SNGE -SIN-</h1>
+            <p class="hidden" data-key="title-txt">
+                Scratch Next-Generation Engine -SIN-<br>
+                Development Lead <a href="https://scratch.mit.edu/users/luwarz1024" target="_blank" rel="noopener noreferrer">@luwarz1024</a><br>
+                Supported by <a href="https://scratch.mit.edu/studios/50915611" target="_blank" rel="noopener noreferrer">Scratcher Federation</a>
+            </p>
+        </section>
+
+        <section class="page-about">
+            <h2 class="hidden" data-key="about-title">About The Future</h2>
+            <div class="card hidden">
+                <h3 class="card-title" data-key="rwj-title">Run with JavaScript</h3>
+                <p data-key="rwj-txt">
+                    - Make it executable even when written directly in JavaScript.<br>
+                    - Enable file distribution.
+                </p>
+            </div>
+
+            <div class="card hidden">
+                <h3 class="card-title" data-key="rtc-title">Real-time Chat via API</h3>
+                <p data-key="rtc-txt">
+                    - Using the -SIN- app enables real-time chat via API.
+                </p>
+            </div>
+
+            <div class="card hidden">
+                <h3 class="card-title" data-key="ve-title">Various engines</h3>
+                <p data-key="ve-txt">
+                    - Create engines for anime and games.<br>
+                    - Make 3D and online game creation easy.
+                </p>
+            </div>
+        </section>
+
+        <section class="page-faq">
+            <h2 class="hidden">FAQ</h2>
+            <div class="hidden">
+                <details>
+                    <summary data-key="faq-1-q">What is SNGE -SIN-?</summary>
+                    <p data-key="faq-1-a">It's a Scratch Next-Generation Engine developed by <a href="https://scratch.mit.edu/users/luwarz1024" target="_blank" rel="noopener noreferrer">@luwarz1024</a>.</p>
+                </details>
+
+                <details>
+                    <summary data-key="faq-2-q">What is Scratcher Federation?</summary>
+                    <p data-key="faq-2-a">This is a technology studio operated by <a href="https://scratch.mit.edu/users/riki-kusa" target="_blank" rel="noopener noreferrer">@riki-kusa</a>.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="page-contact">
+            <h2 class="hidden" data-key="cu-title">Contact Us</h2>
+            <p class="hidden" data-key="cu-txt">If you have any questions or would like to participate in this project, please contact us.</p>
+            
+            <div class="card hidden">
+                <a href="https://scratch.mit.edu/users/luwarz1024" class="contact-btn" target="_blank" rel="noopener noreferrer">Scratch - luwarz1024</a>
+                <a href="https://scratch.mit.edu/users/Dev-Something" class="contact-btn" target="_blank" rel="noopener noreferrer">Scratch - Dev-Something</a>
+            </div>
+        </section>
+                
+        <footer>
+            <p>&copy; 2026 SNGE -SIN- All rights reserved. | This Site Made <a href="https://github.com/Dev-Something-Code" target="_blank" rel="noopener noreferrer">@Dev-Something</a></p>
+            <div class="theme-btn">
+                <button id="theme-btn">Theme</button>
+
+                <div class="themeBtn-menu" id="theme-menu">
+                    <button data-theme="Light">Light</button>
+                    <button data-theme="Dark">Dark</button>
+                    <button data-theme="Auto">Auto</button>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="./scripts/modules.js"></script>
+    </body>
+</html>
