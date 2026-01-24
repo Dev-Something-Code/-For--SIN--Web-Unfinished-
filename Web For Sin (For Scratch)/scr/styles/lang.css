@@ -1,7 +1,10 @@
-html.jp {
-  font-family: "Kiwi Maru", serif;
+html.jp body{
+  font-family:
+    "Kiwi Maru",
+    "Roboto"
 }
 
-html.en {
-  font-family: "Indie Flower", cursive;
+html.en body{
+  font-family:
+    "Indie Flower"
 }

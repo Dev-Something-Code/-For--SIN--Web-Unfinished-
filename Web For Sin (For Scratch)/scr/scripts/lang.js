@@ -63,7 +63,10 @@ const txt = {
 document.addEventListener("DOMContentLoaded", () => {
     function change_txt(lang) {
         const elements = document.querySelectorAll('[data-key]');
-        
+
+        lang_html.classList.toggle('jp', lang === 'jp');
+        lang_html.classList.toggle('en', lang === 'en');
+
         elements.forEach((el) => {
             const key = el.dataset.key;
             el.innerHTML = txt[lang][key];
@@ -89,4 +92,4 @@ document.addEventListener("DOMContentLoaded", () => {
         langMenu.classList.toggle("open");
 
     })
-});;
+});
