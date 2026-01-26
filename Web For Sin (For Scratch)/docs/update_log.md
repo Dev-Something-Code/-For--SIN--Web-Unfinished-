@@ -17,3 +17,9 @@
 + change lang.css (coding)
 + change home.html (add html class light/dark)
 ```
+
+## v.0.0.4
+```diff
++ change home.html (add div right class)
++ change common_style.css (coding)
+```
