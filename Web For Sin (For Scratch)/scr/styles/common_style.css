@@ -14,13 +14,51 @@ html.dark body{
   --link-hover: #bae6fd;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   background: var(--bg);
   color: var(--text);
 }
 
 header {
-    background: var(--card)
+  width: 100%;
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+}
+
+p.header-title{
+  padding-left: 12px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 24px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.langBtn {
+  padding-right: 24px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#lang-menu {
+  display: none;
 }
 
 .card {
